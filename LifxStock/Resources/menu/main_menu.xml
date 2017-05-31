@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:local="http://schemas.android.com/apk/res-auto">
+  <item
+       android:id="@+id/menuSettings"
+       local:showAsAction="never"
+       android:title="Settings" />
+  <item
+     android:id="@+id/menuLicense"
+     local:showAsAction="never"
+     android:title="License" />
+  <item
+     android:id="@+id/buyBulb"
+     local:showAsAction="never"
+     android:title="Buy LIFX-bulb" />
+</menu>

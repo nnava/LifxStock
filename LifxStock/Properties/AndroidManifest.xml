@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.lifx.stockmonitor" android:versionName="1.1" android:installLocation="auto" android:versionCode="4">
+	<uses-sdk android:minSdkVersion="19" />
+	<application android:label="LifxStockMonitor" android:theme="@style/Theme.LifxStock" android:icon="@drawable/Icon"></application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<!-- Points to searchable activity so the whole app can invoke search. -->
+	<meta-data android:name="android.app.default_searchable" android:value="lifxStock.SearchableDictionary" />
+</manifest>

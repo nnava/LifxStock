@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/main_content"
+        android:layout_below="@id/toolbar">
+        <ToggleButton
+            android:id="@+id/lifxSupportToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="LIFX-support on"
+            android:textOff="LIFX-support off" />
+        <TextView
+            android:id="@+id/lifxTokenTextView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Token (not visible after save)"
+            android:layout_below="@id/lifxSupportToggleButton" />
+        <EditText
+            android:id="@+id/lifxTokenEditText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxLines="2"
+            android:lines="2"
+            android:layout_below="@id/lifxTokenTextView" />
+        <Button
+            android:id="@+id/verifyLifxTokenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lifxTokenEditText"
+            android:text="Verify token" />
+        <Button
+            android:id="@+id/lifxTokenHowToLinkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verifyLifxTokenButton"
+            android:text="How to acquire token" />
+        <Button
+            android:id="@+id/deleteAllStockDataButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lifxTokenHowToLinkButton"
+            android:text="Delete all stockmonitor data" />
+    </LinearLayout>
+</RelativeLayout>

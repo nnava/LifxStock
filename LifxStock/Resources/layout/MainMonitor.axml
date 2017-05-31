@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearlayout_main"
+        android:layout_below="@id/toolbar">
+      <android.support.v4.widget.SwipeRefreshLayout
+          android:id="@+id/refresher"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvStockMonitor" />
+      </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorlayout_fab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:id="@+id/fabAddMonitor"
+            android:src="@drawable/ic_add_circle_outline_white_24dp"
+            local:layout_anchorGravity="bottom|right|end" />
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>
